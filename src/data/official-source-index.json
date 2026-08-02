@@ -3,7 +3,7 @@
   "license": "BUSL-1.1 with the repository Additional Use Grant; verify LICENSE before redistribution",
   "examBaseline": "Terraform 1.12",
   "resolvedCommit": "79430c3eebc55958a9c0610bf6b14ef5423cfbde",
-  "generatedAt": "2026-08-02T08:32:05.581Z",
+  "generatedAt": "2026-08-02T11:19:27.507Z",
   "sources": [
     {
       "path": "content/terraform/v1.12.x/docs/intro/index.mdx",
@@ -84,6 +84,18 @@
       "developerUrl": "https://developer.hashicorp.com/terraform/language/v1.12.x/providers"
     },
     {
+      "path": "content/terraform/v1.12.x/docs/language/files/dependency-lock.mdx",
+      "available": true,
+      "repositoryUrl": "https://github.com/hashicorp/web-unified-docs/blob/79430c3eebc55958a9c0610bf6b14ef5423cfbde/content/terraform/v1.12.x/docs/language/files/dependency-lock.mdx",
+      "developerUrl": "https://developer.hashicorp.com/terraform/language/v1.12.x/files/dependency-lock"
+    },
+    {
+      "path": "content/terraform/v1.12.x/docs/language/backend/s3.mdx",
+      "available": true,
+      "repositoryUrl": "https://github.com/hashicorp/web-unified-docs/blob/79430c3eebc55958a9c0610bf6b14ef5423cfbde/content/terraform/v1.12.x/docs/language/backend/s3.mdx",
+      "developerUrl": "https://developer.hashicorp.com/terraform/language/v1.12.x/backend/s3"
+    },
+    {
       "path": "content/terraform/v1.12.x/docs/language/state/index.mdx",
       "available": true,
       "repositoryUrl": "https://github.com/hashicorp/web-unified-docs/blob/79430c3eebc55958a9c0610bf6b14ef5423cfbde/content/terraform/v1.12.x/docs/language/state/index.mdx",
@@ -106,6 +118,30 @@
       "available": true,
       "repositoryUrl": "https://github.com/hashicorp/web-unified-docs/blob/79430c3eebc55958a9c0610bf6b14ef5423cfbde/content/terraform/v1.12.x/docs/language/block/removed.mdx",
       "developerUrl": "https://developer.hashicorp.com/terraform/language/v1.12.x/block/removed"
+    },
+    {
+      "path": "content/terraform/v1.12.x/docs/language/import/index.mdx",
+      "available": true,
+      "repositoryUrl": "https://github.com/hashicorp/web-unified-docs/blob/79430c3eebc55958a9c0610bf6b14ef5423cfbde/content/terraform/v1.12.x/docs/language/import/index.mdx",
+      "developerUrl": "https://developer.hashicorp.com/terraform/language/v1.12.x/import"
+    },
+    {
+      "path": "content/terraform/v1.12.x/docs/language/manage-sensitive-data/index.mdx",
+      "available": true,
+      "repositoryUrl": "https://github.com/hashicorp/web-unified-docs/blob/79430c3eebc55958a9c0610bf6b14ef5423cfbde/content/terraform/v1.12.x/docs/language/manage-sensitive-data/index.mdx",
+      "developerUrl": "https://developer.hashicorp.com/terraform/language/v1.12.x/manage-sensitive-data"
+    },
+    {
+      "path": "content/terraform/v1.12.x/docs/language/manage-sensitive-data/ephemeral.mdx",
+      "available": true,
+      "repositoryUrl": "https://github.com/hashicorp/web-unified-docs/blob/79430c3eebc55958a9c0610bf6b14ef5423cfbde/content/terraform/v1.12.x/docs/language/manage-sensitive-data/ephemeral.mdx",
+      "developerUrl": "https://developer.hashicorp.com/terraform/language/v1.12.x/manage-sensitive-data/ephemeral"
+    },
+    {
+      "path": "content/terraform/v1.12.x/docs/language/manage-sensitive-data/write-only.mdx",
+      "available": true,
+      "repositoryUrl": "https://github.com/hashicorp/web-unified-docs/blob/79430c3eebc55958a9c0610bf6b14ef5423cfbde/content/terraform/v1.12.x/docs/language/manage-sensitive-data/write-only.mdx",
+      "developerUrl": "https://developer.hashicorp.com/terraform/language/v1.12.x/manage-sensitive-data/write-only"
     }
   ]
 }

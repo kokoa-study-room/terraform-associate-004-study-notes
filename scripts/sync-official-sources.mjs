@@ -16,10 +16,16 @@ const paths = [
   'docs/internals/graph.mdx',
   'docs/internals/debugging.mdx',
   'docs/language/providers/index.mdx',
+  'docs/language/files/dependency-lock.mdx',
+  'docs/language/backend/s3.mdx',
   'docs/language/state/index.mdx',
   'docs/language/state/locking.mdx',
   'docs/language/block/moved.mdx',
   'docs/language/block/removed.mdx',
+  'docs/language/import/index.mdx',
+  'docs/language/manage-sensitive-data/index.mdx',
+  'docs/language/manage-sensitive-data/ephemeral.mdx',
+  'docs/language/manage-sensitive-data/write-only.mdx',
 ];
 
 const headers = {

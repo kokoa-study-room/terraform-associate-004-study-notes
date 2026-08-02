@@ -51,6 +51,9 @@ export default defineConfig({
           items: [
             { slug: 'reference/exam-objectives' },
             { slug: 'reference/official-sources' },
+            { slug: 'reference/terraform-1-12-deep-dive' },
+            { slug: 'reference/command-behavior-matrix' },
+            { slug: 'reference/hcp-boundaries' },
             { slug: 'reference/authoring-workflow' },
             { slug: 'reference/corrections' },
             { slug: 'reference/glossary' },
