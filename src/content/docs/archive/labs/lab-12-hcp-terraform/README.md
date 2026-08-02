@@ -1,11 +1,16 @@
 ---
 title: "Lab 12: HCP Terraform 워크플로우"
 description: "Legacy study material imported from labs/lab-12-hcp-terraform/README.md"
+pagefind: false
 ---
 
 > **Archived study note / 기존 학습 노트**  
 > 이 페이지는 기존 자료를 보존해 웹으로 가져온 문서입니다. 시험 기준은 [공식 목표 맵](/reference/exam-objectives/)과 [교정 노트](/reference/corrections/)를 우선하세요.  
 > This page preserves the previous notes. Prefer the [official objective map](/reference/exam-objectives/) and [corrections](/reference/corrections/) when facts differ.
+
+:::danger[Do not copy static credentials]
+이 historical guide의 static AWS access key 절차를 사용하지 마세요. 비용 없는 remote-run 실습과 dynamic credential guidance는 [canonical Lab 12](/labs/12-hcp-terraform/)를 사용합니다.
+:::
 
 ## 📋 개요
 

@@ -1,6 +1,7 @@
 ---
 title: "Lab 10: State 조작 마스터"
 description: "Legacy study material imported from labs/lab-10-state-manipulation/README.md"
+pagefind: false
 ---
 
 > **Archived study note / 기존 학습 노트**  
