@@ -18,10 +18,10 @@ npm run build
 npm run preview
 ```
 
-The production output is written to `dist/`. Set `SITE_URL` to the canonical deployment origin before building.
+The production output is written to `dist/`. The default canonical origin is `https://terraform-study.shinkeonkim.com`; `SITE_URL` can override it for another environment.
 
 ```bash
-SITE_URL="https://terraform-study.example.com" npm run build
+SITE_URL="https://preview.example.com" npm run build
 ```
 
 ## Content structure
@@ -48,3 +48,22 @@ This command resolves curated Terraform 1.12 paths from `hashicorp/web-unified-d
 - Public practice and dump sites may inform topic coverage only.
 - Leaked or memorized live-exam questions are not copied.
 - New questions must be original, scenario-based, bilingual, and cite the concept source used to explain the answer.
+
+## Cloudflare Pages
+
+The repository is prepared for Cloudflare Pages Direct Upload. Build with Node 22 and upload the generated `dist/` directory through the dashboard.
+
+```bash
+npm ci
+npm run build
+```
+
+Use these Pages settings:
+
+- Project name: `terraform-study`
+- Production build command for Git-based setup: `npm run build`
+- Build output directory: `dist`
+- Environment variable: `NODE_VERSION=22`
+- Custom domain: `terraform-study.shinkeonkim.com`
+
+See [`DEPLOYMENT.md`](./DEPLOYMENT.md) for the dashboard procedure and production verification checklist.

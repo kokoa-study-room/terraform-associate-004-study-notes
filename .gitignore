@@ -7,7 +7,7 @@ practices/**/.terraform/
 qa-*.png
 .playwright-mcp/
 .omo/
-.codegraph/
+.codegraph
 .obsidian/
 .wrangler/
 .DS_Store

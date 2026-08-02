@@ -2,7 +2,7 @@ import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 
 export default defineConfig({
-  site: process.env.SITE_URL ?? 'http://localhost:4321',
+  site: process.env.SITE_URL ?? 'https://terraform-study.shinkeonkim.com',
   integrations: [
     starlight({
       title: 'Terraform 004 Study',
