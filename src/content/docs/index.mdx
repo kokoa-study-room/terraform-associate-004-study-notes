@@ -1,0 +1,55 @@
+---
+title: Terraform Associate 004 학습 허브
+description: Official-source bilingual learning path for Terraform Associate 004 and Terraform 1.12.
+template: splash
+hero:
+  tagline: 공식 목표를 기준으로 개념, 실습, 복습을 연결한 한영 병기 학습 사이트<br/>A Korean-English learning site connecting concepts, labs, and review through the official objectives.
+  image:
+    file: ../../assets/terraform-study.svg
+  actions:
+    - text: 순서대로 학습 / Start learning
+      link: /guide/learning-path/
+      icon: right-arrow
+    - text: 공식 시험 목표 / Official objectives
+      link: /reference/exam-objectives/
+      variant: minimal
+---
+
+import { Card, CardGrid, LinkCard } from '@astrojs/starlight/components';
+
+## 한 경로로 연결된 학습 / One connected path
+
+<CardGrid>
+  <Card title="01. 개념 / Concepts" icon="open-book">
+    IaC에서 시작해 provider, workflow, HCL, module, state, 유지보수, HCP Terraform으로 진행합니다.  
+    Move from IaC through providers, workflow, HCL, modules, state, maintenance, and HCP Terraform.
+  </Card>
+  <Card title="02. 실행 / Practice" icon="rocket">
+    각 개념을 기존 12개 실습과 연결합니다. 명령을 암기하는 대신 plan과 state가 왜 변하는지 확인합니다.  
+    Each concept connects to the existing 12 labs so you can observe why plans and state change.
+  </Card>
+  <Card title="03. 검증 / Verify" icon="approve-check">
+    공식 목표 1a~8d 체크리스트와 연습 문제로 이해를 점검하고, 틀린 답을 공식 문서로 역추적합니다.  
+    Verify understanding with objectives 1a-8d and trace mistakes back to official documentation.
+  </Card>
+  <Card title="04. 최신성 / Currency" icon="setting">
+    시험 기준인 Terraform 1.12와 `web-unified-docs`의 버전 고정 소스를 구분합니다.  
+    The site separates the exam baseline, Terraform 1.12, from newer documentation.
+  </Card>
+</CardGrid>
+
+## 빠른 이동 / Quick access
+
+<CardGrid stagger>
+  <LinkCard title="학습 순서 / Learning path" href="/guide/learning-path/" description="개념 의존성에 따라 Domain 1부터 8까지 진행" />
+  <LinkCard title="공식 자료 맵 / Official source map" href="/reference/official-sources/" description="HashiCorp Developer와 web-unified-docs 경로" />
+  <LinkCard title="교정 노트 / Corrections" href="/reference/corrections/" description="기존 자료의 오래되었거나 근거 없는 주장 정리" />
+  <LinkCard title="새 시나리오 문제 / New scenario questions" href="/practice/strategy/" description="공식 목표 기반 독자 문제 24개와 오답 복습 루프" />
+  <LinkCard title="전체 기존 자료 / Detailed archive" href="/archive/project/readme/" description="기존 이론, 12개 Lab, 모의고사 전체 검색" />
+</CardGrid>
+
+:::note[기준 / Baseline]
+Terraform Associate 004는 공식 학습 경로 기준 **Terraform 1.12**를 평가합니다. 이 사이트의 핵심 페이지는 공식 목표와 1.12 문서를 우선하며, 기존 문서는 보존 자료로 표시합니다.
+
+The official learning path states that Terraform Associate 004 tests **Terraform 1.12**. Core pages prioritize the official objectives and versioned 1.12 documentation; imported notes are visibly marked as archived material.
+:::

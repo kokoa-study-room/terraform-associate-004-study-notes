@@ -1,0 +1,16 @@
+node_modules/
+dist/
+.astro/
+practices/**/.terraform/
+*.tfstate
+*.tfstate.*
+qa-*.png
+.playwright-mcp/
+.omo/
+.codegraph/
+.obsidian/
+.wrangler/
+.DS_Store
+.env
+.env.*
+!.env.example
