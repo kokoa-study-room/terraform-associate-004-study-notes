@@ -4,6 +4,8 @@ Terraform Associate 004와 Terraform 1.12 학습을 위한 한영 병기 정적 
 
 This is a bilingual static study website for Terraform Associate 004 and Terraform 1.12. Migrated material lives under `src/content/docs/archive/`, while the core path follows official objectives 1a-8d.
 
+Repository: https://github.com/kokoa-study-room/terraform-associate-004-study-notes
+
 ## Run locally
 
 ```bash
