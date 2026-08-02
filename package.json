@@ -5,8 +5,9 @@
   "type": "module",
   "scripts": {
     "sources:update": "node scripts/sync-official-sources.mjs",
+    "content:check": "node scripts/check-question-bank.mjs",
     "dev": "astro dev",
-    "build": "astro check && astro build",
+    "build": "astro check && npm run content:check && astro build",
     "preview": "astro preview"
   },
   "dependencies": {
