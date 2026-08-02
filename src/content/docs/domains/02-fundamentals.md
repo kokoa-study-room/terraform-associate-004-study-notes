@@ -65,5 +65,6 @@ State is not a copy of HCL. It stores bindings, remote identifiers, snapshots, a
 
 Provider와 state가 준비되는 과정을 실제 명령 순서로 이해하려면 [Core workflow](/domains/03-workflow/)로 이동합니다.
 
-**Official sources:** [Providers](https://developer.hashicorp.com/terraform/language/v1.12.x/providers), [Provider requirements](https://developer.hashicorp.com/terraform/language/v1.12.x/providers/requirements), [Lock file](https://developer.hashicorp.com/terraform/language/v1.12.x/files/dependency-lock), [State purpose](https://developer.hashicorp.com/terraform/language/v1.12.x/state/purpose)  
-**Lab:** [Lab 01](/archive/labs/lab-01-first-project/readme/)
+**Official sources:** [Providers](https://developer.hashicorp.com/terraform/language/v1.12.x/providers), [Provider requirements](https://developer.hashicorp.com/terraform/language/v1.12.x/providers/requirements), [Lock file](https://developer.hashicorp.com/terraform/language/v1.12.x/files/dependency-lock), [State purpose](https://developer.hashicorp.com/terraform/language/v1.12.x/state/purpose)<br />
+**Lab:** [Lab 01 First project](/labs/01-first-project/)<br />
+**Questions:** [Domain 2 bank](/archive/practice-exams/domain-2-terraform-fundamentals/)

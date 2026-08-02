@@ -40,5 +40,6 @@ Terraform Core uses provider plugins to apply a common workflow across APIs. The
 
 IaC의 선언을 실행하려면 누가 API를 호출하고 무엇이 이미 존재하는지 알아야 합니다. 그래서 다음은 [provider와 state](/domains/02-fundamentals/)입니다.
 
-**Official sources:** [Terraform intro v1.12](https://developer.hashicorp.com/terraform/intro/v1.12.x), [Use cases](https://developer.hashicorp.com/terraform/intro/v1.12.x/use-cases)  
-**Detailed archive:** [IaC concepts](/archive/01-iac-concepts/readme/)
+**Official sources:** [Terraform intro v1.12](https://developer.hashicorp.com/terraform/intro/v1.12.x), [Use cases](https://developer.hashicorp.com/terraform/intro/v1.12.x/use-cases)<br />
+**Lab:** [Lab 01 First project](/labs/01-first-project/)<br />
+**Questions:** [Domain 1 bank](/archive/practice-exams/domain-1-iac-concepts/)
