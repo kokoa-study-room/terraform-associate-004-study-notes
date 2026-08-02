@@ -5,14 +5,15 @@ description: A source-aware diagnostic loop for using the original 24-question b
 
 ## 문제은행 구성 / Bank structure
 
+- [200-question bank](/practice/bank-200/): Domains 1-8, 200 questions
 - [Foundations bank](/practice/foundations/): Domains 1-4, 12 questions
 - [Operations bank](/practice/operations/): Domains 5-8, 12 questions
 - [Research notes](/practice/research-notes/): sources, contradictions, and ethical-use policy
 - [Legacy mock exam](/archive/practice-exams/mock-exam-set-1/): migrated long-form practice material
 
-새 24문제는 공식 샘플처럼 true/false, single choice, multiple answer를 혼합합니다. 모든 stem과 distractor는 이 프로젝트에서 새로 작성했으며 실제 시험 유출 문제를 복제하지 않습니다.
+전체 200문항은 domain별 반복 훈련에 사용하고, 새 24문제는 공식 샘플처럼 true/false, single choice, multiple answer를 혼합한 빠른 진단에 사용합니다. 실제 시험 유출 문제를 복제하지 않습니다.
 
-The 24 new questions mix official item styles. Every stem and distractor is original to this project.
+Use the 200-question bank for domain repetition and the 24-question set for a quick diagnostic. The site does not reproduce leaked exam questions.
 
 ## Four-pass loop
 

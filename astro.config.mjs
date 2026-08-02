@@ -62,6 +62,7 @@ export default defineConfig({
         {
           label: '문제 풀이 / Practice',
           items: [
+            { slug: 'practice/bank-200' },
             { slug: 'practice/strategy' },
             { slug: 'practice/foundations' },
             { slug: 'practice/operations' },
