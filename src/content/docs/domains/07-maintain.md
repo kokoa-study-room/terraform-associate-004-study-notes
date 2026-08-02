@@ -59,5 +59,6 @@ Use logs to diagnose initialization, provider communication, graph evaluation, a
 
 로컬 운영 패턴을 팀과 원격 실행으로 확장하면 [HCP Terraform](/domains/08-hcp-terraform/)의 workspace, project, policy가 필요합니다.
 
-**Official sources:** [Import](https://developer.hashicorp.com/terraform/language/v1.12.x/import), [State command](https://developer.hashicorp.com/terraform/cli/v1.12.x/commands/state), [Debugging](https://developer.hashicorp.com/terraform/internals/v1.12.x/debugging)  
-**Detailed archive:** [State commands](/archive/06-state/state-commands/)
+**Official sources:** [Import](https://developer.hashicorp.com/terraform/language/v1.12.x/import), [State command](https://developer.hashicorp.com/terraform/cli/v1.12.x/commands/state), [Debugging](https://developer.hashicorp.com/terraform/internals/v1.12.x/debugging)<br />
+**Lab:** [Lab 10 State operations](/labs/10-state-operations/)<br />
+**Questions:** [Domain 7 bank](/archive/practice-exams/domain-7-maintain/)

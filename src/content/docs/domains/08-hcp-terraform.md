@@ -54,5 +54,7 @@ CLI workspaces and HCP Terraform workspaces share a name but are not interchange
 
 You should now be able to trace one change from HCL expression, through graph and plan, through provider execution, into state, and finally into an HCP Terraform run and governance decision.
 
-**Official sources:** [HCP Terraform](https://developer.hashicorp.com/terraform/cloud-docs), [Workspaces](https://developer.hashicorp.com/terraform/cloud-docs/workspaces), [Projects](https://developer.hashicorp.com/terraform/cloud-docs/projects), [CLI integration](https://developer.hashicorp.com/terraform/cli/v1.12.x/cloud)  
-**Lab:** [HCP Terraform workflow](/archive/labs/lab-12-hcp-terraform/readme/)
+**Official sources:** [HCP Terraform](https://developer.hashicorp.com/terraform/cloud-docs), [Workspaces](https://developer.hashicorp.com/terraform/cloud-docs/workspaces), [Projects](https://developer.hashicorp.com/terraform/cloud-docs/projects), [CLI integration](https://developer.hashicorp.com/terraform/cli/v1.12.x/cloud)<br />
+**Lab:** [Lab 12 HCP Terraform](/labs/12-hcp-terraform/)<br />
+**Review:** [HCP responsibility boundaries](/reference/hcp-boundaries/)<br />
+**Questions:** [Domain 8 bank](/archive/practice-exams/domain-8-hcp-terraform/)
