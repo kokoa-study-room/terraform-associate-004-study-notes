@@ -19,8 +19,8 @@ export default defineConfig({
       social: [
         {
           icon: 'github',
-          label: 'HashiCorp web-unified-docs',
-          href: 'https://github.com/hashicorp/web-unified-docs',
+          label: 'Terraform 004 Study on GitHub',
+          href: 'https://github.com/kokoa-study-room/terraform-associate-004-study-notes',
         },
       ],
       lastUpdated: true,
@@ -31,10 +31,10 @@ export default defineConfig({
       sidebar: [
         {
           label: '시작 / Start',
-          items: [{ slug: 'index' }, { slug: 'guide/learning-path' }, { slug: 'guide/labs-and-practice' }],
+          items: [{ slug: 'index' }, { slug: 'guide/learning-path' }, { slug: 'guide/content-status' }],
         },
         {
-          label: '시험 도메인 / Exam domains',
+          label: '개념 / Concepts',
           items: [
             { slug: 'domains/01-iac' },
             { slug: 'domains/02-fundamentals' },
@@ -47,20 +47,48 @@ export default defineConfig({
           ],
         },
         {
-          label: '공식 기준 / Official baseline',
+          label: 'Lab으로 공부 / Learn with Labs',
           items: [
+            { slug: 'labs' },
+            {
+              label: '기초 / Beginner',
+              items: [{ slug: 'labs/01-first-project' }, { slug: 'labs/02-variables-outputs' }, { slug: 'labs/03-data-sources' }],
+            },
+            {
+              label: '중급 / Intermediate',
+              items: [
+                { slug: 'labs/04-count-for-each' },
+                { slug: 'labs/05-modules' },
+                { slug: 'labs/06-remote-state' },
+                { slug: 'labs/07-lifecycle' },
+              ],
+            },
+            {
+              label: '심화 / Advanced',
+              items: [
+                { slug: 'labs/08-custom-conditions' },
+                { slug: 'labs/09-dynamic-blocks' },
+                { slug: 'labs/10-state-operations' },
+                { slug: 'labs/11-registry-modules' },
+                { slug: 'labs/12-hcp-terraform' },
+              ],
+            },
+          ],
+        },
+        {
+          label: '시험 대비 정리 / Exam Review',
+          items: [
+            { slug: 'review/exam-readiness' },
             { slug: 'reference/exam-objectives' },
-            { slug: 'reference/official-sources' },
             { slug: 'reference/terraform-1-12-deep-dive' },
             { slug: 'reference/command-behavior-matrix' },
             { slug: 'reference/hcp-boundaries' },
-            { slug: 'reference/authoring-workflow' },
             { slug: 'reference/corrections' },
             { slug: 'reference/glossary' },
           ],
         },
         {
-          label: '문제 풀이 / Practice',
+          label: '시험 대비 문제 풀이 / Practice',
           items: [
             { slug: 'practice/bank-200' },
             { slug: 'practice/strategy' },
@@ -70,9 +98,14 @@ export default defineConfig({
           ],
         },
         {
-          label: '기존 상세 자료 / Detailed archive',
+          label: '참고 자료 / References',
           collapsed: true,
-          items: [{ autogenerate: { directory: 'archive' } }],
+          items: [
+            { slug: 'reference/official-sources' },
+            { slug: 'guide/labs-and-practice' },
+            { slug: 'practice/research-notes' },
+            { slug: 'reference/authoring-workflow' },
+          ],
         },
       ],
     }),

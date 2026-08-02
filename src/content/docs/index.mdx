@@ -17,24 +17,28 @@ hero:
 
 import { Card, CardGrid, LinkCard } from '@astrojs/starlight/components';
 
-## 한 경로로 연결된 학습 / One connected path
+## 다섯 단계 학습 경로 / Five aligned stages
 
 <CardGrid>
   <Card title="01. 개념 / Concepts" icon="open-book">
-    IaC에서 시작해 provider, workflow, HCL, module, state, 유지보수, HCP Terraform으로 진행합니다.  
+    IaC에서 시작해 provider, workflow, HCL, module, state, 유지보수, HCP Terraform으로 진행합니다.<br />
     Move from IaC through providers, workflow, HCL, modules, state, maintenance, and HCP Terraform.
   </Card>
-  <Card title="02. 실행 / Practice" icon="rocket">
-    각 개념을 기존 12개 실습과 연결합니다. 명령을 암기하는 대신 plan과 state가 왜 변하는지 확인합니다.  
-    Each concept connects to the existing 12 labs so you can observe why plans and state change.
+  <Card title="02. Lab / Hands-on" icon="rocket">
+    12개 canonical Lab에서 선행 개념, 실행 단계, 검증, cleanup을 한 흐름으로 수행합니다.<br />
+    Twelve canonical labs connect prerequisites, execution, verification, and cleanup.
   </Card>
-  <Card title="03. 검증 / Verify" icon="approve-check">
-    공식 목표 1a~8d 체크리스트와 연습 문제로 이해를 점검하고, 틀린 답을 공식 문서로 역추적합니다.  
-    Verify understanding with objectives 1a-8d and trace mistakes back to official documentation.
+  <Card title="03. 시험 정리 / Review" icon="approve-check">
+    Objective 1a-8d, command matrix, state, HCP 경계를 시험 직전 checklist로 압축합니다.<br />
+    Consolidate objectives and behavior boundaries into a pre-exam checklist.
   </Card>
-  <Card title="04. 최신성 / Currency" icon="setting">
-    시험 기준인 Terraform 1.12와 `web-unified-docs`의 버전 고정 소스를 구분합니다.  
-    The site separates the exam baseline, Terraform 1.12, from newer documentation.
+  <Card title="04. 문제 풀이 / Questions" icon="puzzle">
+    200문항 domain bank와 24문항 diagnostic으로 오답을 분류하고 공식 근거로 돌아갑니다.<br />
+    Use the 200-question bank and 24-question diagnostic to classify gaps.
+  </Card>
+  <Card title="05. 공식 확인 / Sources" icon="setting">
+    Terraform 1.12 versioned 문서와 HCP Terraform 공식 문서로 최종 판단을 검증합니다.<br />
+    Verify final decisions against versioned Terraform 1.12 and current HCP documentation.
   </Card>
 </CardGrid>
 
@@ -42,11 +46,13 @@ import { Card, CardGrid, LinkCard } from '@astrojs/starlight/components';
 
 <CardGrid stagger>
   <LinkCard title="학습 순서 / Learning path" href="/guide/learning-path/" description="개념 의존성에 따라 Domain 1부터 8까지 진행" />
+  <LinkCard title="Lab 12개 / Twelve labs" href="/labs/" description="선행 개념, 실행, 검증, cleanup이 연결된 실습 경로" />
+  <LinkCard title="시험 대비 정리 / Exam review" href="/review/exam-readiness/" description="Objective 1a-8d 최종 checklist와 오답 복습 기준" />
   <LinkCard title="공식 자료 맵 / Official source map" href="/reference/official-sources/" description="HashiCorp Developer와 web-unified-docs 경로" />
   <LinkCard title="교정 노트 / Corrections" href="/reference/corrections/" description="기존 자료의 오래되었거나 근거 없는 주장 정리" />
   <LinkCard title="예상 문제 200개 / 200-question bank" href="/practice/bank-200/" description="Domain 1-8 전체 문제, 해설, 공식 기준 교정" />
   <LinkCard title="빠른 진단 24개 / Quick diagnostic" href="/practice/strategy/" description="공식 목표 기반 독자 시나리오와 오답 복습 루프" />
-  <LinkCard title="전체 기존 자료 / Detailed archive" href="/archive/project/readme/" description="기존 이론, 12개 Lab, 모의고사 전체 검색" />
+  <LinkCard title="현재 자료 상태 / Content status" href="/guide/content-status/" description="완료된 canonical 자료와 historical archive의 경계" />
 </CardGrid>
 
 :::note[기준 / Baseline]
