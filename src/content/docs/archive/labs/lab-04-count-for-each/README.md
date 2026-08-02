@@ -1,6 +1,7 @@
 ---
 title: "Lab 04: count와 for_each"
 description: "Legacy study material imported from labs/lab-04-count-for-each/README.md"
+pagefind: false
 ---
 
 > **Archived study note / 기존 학습 노트**  

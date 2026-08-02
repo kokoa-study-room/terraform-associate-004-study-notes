@@ -1,11 +1,16 @@
 ---
 title: "Lab 06: Remote State 설정"
 description: "Legacy study material imported from labs/lab-06-remote-state/README.md"
+pagefind: false
 ---
 
 > **Archived study note / 기존 학습 노트**  
 > 이 페이지는 기존 자료를 보존해 웹으로 가져온 문서입니다. 시험 기준은 [공식 목표 맵](/reference/exam-objectives/)과 [교정 노트](/reference/corrections/)를 우선하세요.  
 > This page preserves the previous notes. Prefer the [official objective map](/reference/exam-objectives/) and [corrections](/reference/corrections/) when facts differ.
+
+:::caution[Current Terraform 1.12 path]
+이 historical guide의 DynamoDB locking 절차 대신 [canonical Lab 06](/labs/06-remote-state/)의 S3 `use_lockfile` 절차를 사용하세요. DynamoDB-based locking은 deprecated입니다.
+:::
 
 ## 📋 개요
 

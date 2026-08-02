@@ -1,6 +1,7 @@
 ---
 title: "Lab 05: 첫 번째 Module 만들기"
 description: "Legacy study material imported from labs/lab-05-first-module/README.md"
+pagefind: false
 ---
 
 > **Archived study note / 기존 학습 노트**  
