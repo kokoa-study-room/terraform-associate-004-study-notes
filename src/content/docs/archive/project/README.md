@@ -13,19 +13,19 @@ description: "Legacy study material imported from README.md"
 ## 웹 사이트 실행 / Run the website
 
 ```bash
-npm install
-npm run dev
+bun install --frozen-lockfile
+bun run dev
 ```
 
-Production 정적 파일은 `npm run build` 후 `dist/`에 생성됩니다. 검색은 production build에서 Pagefind로 동작하므로 `npm run build && npm run preview`로 확인하세요.
+Production 정적 파일은 `bun run build` 후 `dist/`에 생성됩니다. 검색은 production build에서 Pagefind로 동작하므로 `bun run build` 후 `bun run preview`로 확인하세요.
 
-For deployment, set `SITE_URL` to the canonical origin and optionally set `BASE_PATH` for a project subpath such as GitHub Pages.
+The default deployment origin is `https://terraform-study.shinkeonkim.com`. Override `SITE_URL` only for another environment.
 
 ```bash
-SITE_URL="https://example.github.io" BASE_PATH="/terraform-study/" npm run build
+SITE_URL="https://preview.example.com" bun run build
 ```
 
-공식 `web-unified-docs` v1.12 소스 인덱스는 `npm run sources:update`로 갱신합니다.
+공식 `web-unified-docs` v1.12 소스 인덱스는 `bun run sources:update`로 갱신합니다.
 
 ## 📋 목차
 

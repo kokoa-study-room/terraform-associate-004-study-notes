@@ -34,4 +34,4 @@ For exam questions, prefer versioned 1.12 documentation when current behavior di
 
 The repository uses Business Source License 1.1 with an Additional Use Grant. This project keeps summaries, citations, links, and an index rather than republishing the complete official corpus. Review the current repository license before copying or hosting original content.
 
-Run `npm run sources:update` to refresh `src/data/official-source-index.json` against the current repository head without making the site build depend on network access.
+Run `bun run sources:update` to refresh `src/data/official-source-index.json` against the current repository head without making the site build depend on network access.

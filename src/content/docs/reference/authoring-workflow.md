@@ -12,7 +12,7 @@ Do not blindly republish official documentation. Author each lesson as **objecti
 ## 1. 공식 소스 고정 / Pin official sources
 
 ```bash
-npm run sources:update
+bun run sources:update
 ```
 
 This resolves the current `web-unified-docs` commit and checks the curated Terraform 1.12 paths in `src/data/official-source-index.json`. Use `repositoryUrl` for an immutable source view and `developerUrl` for the rendered official documentation.
@@ -51,8 +51,8 @@ English is not decorative translation. It preserves the vocabulary used in the e
 ## 6. 검증 / Verify
 
 ```bash
-npm run build
-npm run preview
+bun run build
+bun run preview
 ```
 
 Check the page at 375px and desktop width, verify every internal link, run the example in a disposable environment when feasible, and update [corrections](/reference/corrections/) when an archived statement changes.
