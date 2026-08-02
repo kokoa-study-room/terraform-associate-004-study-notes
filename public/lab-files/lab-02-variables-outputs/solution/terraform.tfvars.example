@@ -1,0 +1,10 @@
+environment       = "dev"
+bucket_prefix     = "mycompany"
+enable_versioning = true
+aws_region        = "us-east-1"
+
+tags = {
+  Team       = "DevOps"
+  Project    = "WebApplication"
+  CostCenter = "Engineering"
+}
