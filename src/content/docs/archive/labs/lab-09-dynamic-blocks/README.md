@@ -1,6 +1,7 @@
 ---
 title: "Lab 09: Dynamic Blocks"
 description: "Legacy study material imported from labs/lab-09-dynamic-blocks/README.md"
+pagefind: false
 ---
 
 > **Archived study note / 기존 학습 노트**  

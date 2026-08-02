@@ -1,6 +1,7 @@
 ---
 title: "Lab 08: Custom Conditions (004 신규)"
 description: "Legacy study material imported from labs/lab-08-custom-conditions/README.md"
+pagefind: false
 ---
 
 > **Archived study note / 기존 학습 노트**  

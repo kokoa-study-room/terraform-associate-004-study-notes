@@ -1,6 +1,7 @@
 ---
 title: "Lab 07: Lifecycle Meta-Arguments"
 description: "Legacy study material imported from labs/lab-07-lifecycle/README.md"
+pagefind: false
 ---
 
 > **Archived study note / 기존 학습 노트**  
