@@ -51,5 +51,6 @@ Module version constraints control acceptable registry releases. Pin deliberatel
 
 Module 경계를 바꾸면 resource address도 바뀔 수 있습니다. 안전한 리팩터링을 위해 [state와 moved/removed block](/domains/06-state/)을 이해해야 합니다.
 
-**Official sources:** [Modules overview](https://developer.hashicorp.com/terraform/language/v1.12.x/modules), [Module configuration](https://developer.hashicorp.com/terraform/language/v1.12.x/modules/configuration), [Composition](https://developer.hashicorp.com/terraform/language/v1.12.x/modules/develop/composition)  
-**Labs:** [Create a module](/archive/labs/lab-05-first-module/readme/), [Registry module](/archive/labs/lab-11-module-registry/readme/)
+**Official sources:** [Modules overview](https://developer.hashicorp.com/terraform/language/v1.12.x/modules), [Module configuration](https://developer.hashicorp.com/terraform/language/v1.12.x/modules/configuration), [Composition](https://developer.hashicorp.com/terraform/language/v1.12.x/modules/develop/composition)<br />
+**Labs:** [05 Build a module](/labs/05-modules/), [11 Registry modules](/labs/11-registry-modules/)<br />
+**Questions:** [Domain 5 bank](/archive/practice-exams/domain-5-modules/)

@@ -45,5 +45,6 @@ Manual state editing is the last resort. Pull a backup, use supported commands, 
 
 State를 이해하면 기존 객체를 import하고 문제를 진단할 수 있습니다. 다음은 [maintain infrastructure](/domains/07-maintain/)입니다.
 
-**Official sources:** [State](https://developer.hashicorp.com/terraform/language/v1.12.x/state), [Backends](https://developer.hashicorp.com/terraform/language/v1.12.x/state/backends), [Locking](https://developer.hashicorp.com/terraform/language/v1.12.x/state/locking), [Refactor](https://developer.hashicorp.com/terraform/language/v1.12.x/state/refactor)  
-**Labs:** [Remote state](/archive/labs/lab-06-remote-state/readme/), [State manipulation](/archive/labs/lab-10-state-manipulation/readme/)
+**Official sources:** [State](https://developer.hashicorp.com/terraform/language/v1.12.x/state), [Backends](https://developer.hashicorp.com/terraform/language/v1.12.x/state/backends), [Locking](https://developer.hashicorp.com/terraform/language/v1.12.x/state/locking), [Refactor](https://developer.hashicorp.com/terraform/language/v1.12.x/state/refactor)<br />
+**Labs:** [06 Remote state](/labs/06-remote-state/), [10 State operations](/labs/10-state-operations/)<br />
+**Questions:** [Domain 6 bank](/archive/practice-exams/domain-6-state/)
