@@ -1,6 +1,7 @@
 ---
 title: "Terraform Associate (004) 모의고사 Set 2"
 description: "Legacy study material imported from practice-exams/mock-exam-set-2.md"
+pagefind: false
 ---
 
 > **Archived study note / 기존 학습 노트**  

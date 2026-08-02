@@ -1,6 +1,7 @@
 ---
 title: "Terraform Associate (004) 학습 자료 최종 완성 현황"
 description: "Legacy study material imported from practice-exams/mock-exam-set-3.md"
+pagefind: false
 ---
 
 > **Archived study note / 기존 학습 노트**  
