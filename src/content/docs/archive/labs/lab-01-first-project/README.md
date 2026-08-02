@@ -1,6 +1,7 @@
 ---
 title: "Lab 01: 첫 번째 Terraform 프로젝트"
 description: "Legacy study material imported from labs/lab-01-first-project/README.md"
+pagefind: false
 ---
 
 > **Archived study note / 기존 학습 노트**  

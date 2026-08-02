@@ -1,6 +1,7 @@
 ---
 title: "Lab 02: Variables와 Outputs"
 description: "Legacy study material imported from labs/lab-02-variables-outputs/README.md"
+pagefind: false
 ---
 
 > **Archived study note / 기존 학습 노트**  

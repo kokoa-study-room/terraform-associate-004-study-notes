@@ -1,6 +1,7 @@
 ---
 title: "Lab 03: Data Sources 활용"
 description: "Legacy study material imported from labs/lab-03-data-sources/README.md"
+pagefind: false
 ---
 
 > **Archived study note / 기존 학습 노트**  
