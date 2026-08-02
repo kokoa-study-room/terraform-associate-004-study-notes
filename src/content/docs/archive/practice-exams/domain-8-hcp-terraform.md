@@ -1,11 +1,10 @@
 ---
-title: "Domain 8: HCP Terraform (6%)"
-description: "Legacy study material imported from practice-exams/domain-8-hcp-terraform.md"
+title: "Domain 8 문제 20개 / HCP Terraform"
+description: "Twenty Terraform Associate 004 HCP Terraform practice questions."
 ---
 
-> **Archived study note / 기존 학습 노트**  
-> 이 페이지는 기존 자료를 보존해 웹으로 가져온 문서입니다. 시험 기준은 [공식 목표 맵](/reference/exam-objectives/)과 [교정 노트](/reference/corrections/)를 우선하세요.  
-> This page preserves the previous notes. Prefer the [official objective map](/reference/exam-objectives/) and [corrections](/reference/corrections/) when facts differ.
+> **Canonical 200 bank / 200문항 문제은행**  
+> 이 페이지는 [200문항 인덱스](/practice/bank-200/)의 Domain 8 문제 20개입니다. Workspace, project, credential, policy 경계는 [HCP 책임 경계](/reference/hcp-boundaries/)를 함께 확인하세요.
 
 ## 📚 도메인 개요
 
@@ -76,7 +75,7 @@ Terraform 코드에서 HCP Terraform 사용 (최신 방식):
 
 **정답: B**
 
-`cloud` block (신). `backend "remote"` 는 deprecated.
+`cloud` block이 HCP Terraform의 권장 integration 방식입니다. `backend "remote"`는 여전히 지원되지만 Terraform 1.1부터 built-in cloud integration이 권장됩니다.
 </details>
 
 ### 문제 5: 🟢 Easy
@@ -356,7 +355,7 @@ Run Trigger 는 Source apply 후 destination 에서 무엇을 실행?
 
 1. **HCP Workspace ≠ CLI Workspace** (완전히 다름!)
 2. **Run 순서:** Plan → Cost Estimation → Policy Check → Apply
-3. **cloud block** (최신) vs backend "remote" (deprecated)
+3. **cloud block** (권장) vs backend "remote" (지원되지만 cloud integration 권장)
 4. **Variable Sets scope:** Global, Project, Workspace
 5. **Enforcement Levels:** Advisory, Soft Mandatory, Hard Mandatory
 6. **Policy engines:** Sentinel (HashiCorp), OPA (CNCF)

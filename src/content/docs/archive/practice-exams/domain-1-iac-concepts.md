@@ -1,11 +1,10 @@
 ---
-title: "Domain 1: Infrastructure as Code Concepts (6%)"
-description: "Legacy study material imported from practice-exams/domain-1-iac-concepts.md"
+title: "Domain 1 문제 20개 / IaC Concepts"
+description: "Twenty Terraform Associate 004 Infrastructure as Code practice questions."
 ---
 
-> **Archived study note / 기존 학습 노트**  
-> 이 페이지는 기존 자료를 보존해 웹으로 가져온 문서입니다. 시험 기준은 [공식 목표 맵](/reference/exam-objectives/)과 [교정 노트](/reference/corrections/)를 우선하세요.  
-> This page preserves the previous notes. Prefer the [official objective map](/reference/exam-objectives/) and [corrections](/reference/corrections/) when facts differ.
+> **Canonical 200 bank / 200문항 문제은행**  
+> 이 페이지는 [200문항 인덱스](/practice/bank-200/)의 Domain 1 문제 20개입니다. 정답을 연 뒤 각 개념을 [공식 목표](/reference/exam-objectives/)와 대조하세요.
 
 ## 📚 도메인 개요
 
@@ -62,7 +61,7 @@ Terraform 은 "무엇을" 원하는지 명시하면, 어떻게 만들지는 Terr
 
 **정답: False**
 
-Terraform 은 멀티 클라우드 (AWS, Azure, GCP, Alibaba 등) 및 SaaS (GitHub, Datadog), 온프레미스 (VMware) 등 3000+ Provider 를 지원합니다.
+Terraform은 public cloud, private cloud, SaaS 등 서로 다른 API를 provider plugin으로 관리할 수 있습니다. Provider 수는 시점에 따라 바뀌므로 고정 숫자를 시험 사실로 외우지 않습니다.
 </details>
 
 ### 문제 4: 🟡 Medium

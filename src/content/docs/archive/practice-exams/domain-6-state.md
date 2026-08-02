@@ -1,11 +1,10 @@
 ---
-title: "Domain 6: State Management (16%)"
-description: "Legacy study material imported from practice-exams/domain-6-state.md"
+title: "Domain 6 문제 30개 / State Management"
+description: "Thirty Terraform Associate 004 state-management practice questions."
 ---
 
-> **Archived study note / 기존 학습 노트**  
-> 이 페이지는 기존 자료를 보존해 웹으로 가져온 문서입니다. 시험 기준은 [공식 목표 맵](/reference/exam-objectives/)과 [교정 노트](/reference/corrections/)를 우선하세요.  
-> This page preserves the previous notes. Prefer the [official objective map](/reference/exam-objectives/) and [corrections](/reference/corrections/) when facts differ.
+> **Canonical 200 bank / 200문항 문제은행**  
+> 이 페이지는 [200문항 인덱스](/practice/bank-200/)의 Domain 6 문제 30개입니다. Terraform 1.12 기준 심화 내용은 [1.12 심화 포인트](/reference/terraform-1-12-deep-dive/)를 함께 확인하세요.
 
 ## 📚 도메인 개요
 
@@ -34,34 +33,34 @@ Provider 인증은 credentials/env.
 
 ### 문제 2: 🔴 Hard
 
-S3 Backend 만으로 State Locking 이 가능한가요?
+Terraform 1.12의 S3 backend에서 S3 lock file을 활성화하는 설정은?
 
-- A) Yes
-- B) No, DynamoDB 필요
-- C) Yes, KMS 사용 시
-- D) Yes, versioning 활성화 시
+- A) `use_lockfile = true`
+- B) `encrypt = true`
+- C) `use_versioning = true`
+- D) `lock_table = true`
 
 <details><summary>정답 및 해설</summary>
 
-**정답: B**
+**정답: A**
 
-S3 는 자체 locking 미지원. DynamoDB 테이블 필수.
+S3 backend의 `use_lockfile`은 opt-in state locking을 활성화합니다. DynamoDB-based locking은 deprecated입니다.
 </details>
 
 ### 문제 3: 🟡 Medium
 
-DynamoDB Lock Table 의 Primary Key 는?
+S3 lock file을 사용할 때 lock object에 필요한 권한은? (**Select THREE**)
 
-- A) `id`
-- B) `LockID`
-- C) `state_lock`
-- D) `terraform_lock`
+- A) `s3:GetObject`
+- B) `s3:PutObject`
+- C) `s3:DeleteObject`
+- D) `s3:CreateTable`
 
 <details><summary>정답 및 해설</summary>
 
-**정답: B**
+**정답: A, B, C**
 
-`LockID` (String).
+Terraform은 `.tflock` object를 읽고, 쓰고, 삭제할 수 있어야 합니다. DynamoDB table 권한은 S3 lock file 방식에 필요하지 않습니다.
 </details>
 
 ### 문제 4: 🟢 Easy
@@ -98,18 +97,14 @@ State 만 제거, 실제 인프라 유지.
 
 ### 문제 6: 🔴 Hard
 
-Backend 종류 중 자체 Locking 을 지원하지 않는 것은?
+**True / False:** 모든 Terraform backend가 state locking을 지원한다.
 
-- A) azurerm
-- B) gcs
-- C) s3
-- D) consul
 
 <details><summary>정답 및 해설</summary>
 
-**정답: C**
+**정답: False**
 
-S3 만 DynamoDB 필요. 나머지는 native locking.
+Locking 지원 여부와 구현은 backend마다 다릅니다. 사용하는 backend의 공식 문서를 확인해야 합니다.
 </details>
 
 ### 문제 7: 🟡 Medium
@@ -520,7 +515,7 @@ S3 backend 의 필수 arguments 는? (**Select THREE**)
 
 ## 🎯 핵심 개념 정리
 
-1. **S3 Backend + DynamoDB = Locking**
+1. **S3 Backend + `use_lockfile = true` = S3 locking**
 2. **`sensitive` 는 CLI 만 마스킹**
 3. **State 명령어:** list, show, mv, rm, pull, push
 4. **Deprecated:** `taint` → `apply -replace`, `refresh` → `apply -refresh-only`

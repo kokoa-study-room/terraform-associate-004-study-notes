@@ -1,11 +1,10 @@
 ---
-title: "Domain 3: Core Terraform Workflow (16%)"
-description: "Legacy study material imported from practice-exams/domain-3-core-workflow.md"
+title: "Domain 3 문제 25개 / Core Workflow"
+description: "Twenty-five Terraform Associate 004 core workflow practice questions."
 ---
 
-> **Archived study note / 기존 학습 노트**  
-> 이 페이지는 기존 자료를 보존해 웹으로 가져온 문서입니다. 시험 기준은 [공식 목표 맵](/reference/exam-objectives/)과 [교정 노트](/reference/corrections/)를 우선하세요.  
-> This page preserves the previous notes. Prefer the [official objective map](/reference/exam-objectives/) and [corrections](/reference/corrections/) when facts differ.
+> **Canonical 200 bank / 200문항 문제은행**  
+> 이 페이지는 [200문항 인덱스](/practice/bank-200/)의 Domain 3 문제 25개입니다. 명령별 side effect는 [명령 동작 매트릭스](/reference/command-behavior-matrix/)에서 검증하세요.
 
 ## 📚 도메인 개요
 
