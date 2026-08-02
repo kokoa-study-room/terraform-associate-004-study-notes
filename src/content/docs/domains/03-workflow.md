@@ -43,5 +43,7 @@ Expression references create graph edges. Use `depends_on` only for hidden depen
 
 Workflow가 읽는 입력은 Terraform configuration입니다. 다음 단계에서 [HCL block, expression, type, dependency](/domains/04-configuration/)를 연결합니다.
 
-**Official sources:** [Core workflow](https://developer.hashicorp.com/terraform/intro/v1.12.x/core-workflow), [`init`](https://developer.hashicorp.com/terraform/cli/v1.12.x/commands/init), [`plan`](https://developer.hashicorp.com/terraform/cli/v1.12.x/commands/plan), [`apply`](https://developer.hashicorp.com/terraform/cli/v1.12.x/commands/apply)  
-**Detailed archive:** [CLI command guide](/archive/03-core-workflow/cli-commands/)
+**Official sources:** [Core workflow](https://developer.hashicorp.com/terraform/intro/v1.12.x/core-workflow), [`init`](https://developer.hashicorp.com/terraform/cli/v1.12.x/commands/init), [`plan`](https://developer.hashicorp.com/terraform/cli/v1.12.x/commands/plan), [`apply`](https://developer.hashicorp.com/terraform/cli/v1.12.x/commands/apply)<br />
+**Lab:** [Lab 01 First project](/labs/01-first-project/)<br />
+**Review:** [Command behavior matrix](/reference/command-behavior-matrix/)<br />
+**Questions:** [Domain 3 bank](/archive/practice-exams/domain-3-core-workflow/)

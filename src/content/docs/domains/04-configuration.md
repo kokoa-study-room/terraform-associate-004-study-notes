@@ -77,5 +77,6 @@ Vault and other secrets managers avoid hard-coding long-lived secrets in configu
 
 구성의 input/output 계약을 재사용 가능한 경계로 묶으면 [module](/domains/05-modules/)이 됩니다.
 
-**Official sources:** [Resources](https://developer.hashicorp.com/terraform/language/v1.12.x/resources), [Values](https://developer.hashicorp.com/terraform/language/v1.12.x/values), [Functions](https://developer.hashicorp.com/terraform/language/v1.12.x/functions), [Validate](https://developer.hashicorp.com/terraform/language/v1.12.x/validate), [Sensitive data](https://developer.hashicorp.com/terraform/language/v1.12.x/manage-sensitive-data)  
-**Labs:** [Variables and outputs](/archive/labs/lab-02-variables-outputs/readme/), [Custom conditions](/archive/labs/lab-08-custom-conditions/readme/)
+**Official sources:** [Resources](https://developer.hashicorp.com/terraform/language/v1.12.x/resources), [Values](https://developer.hashicorp.com/terraform/language/v1.12.x/values), [Functions](https://developer.hashicorp.com/terraform/language/v1.12.x/functions), [Validate](https://developer.hashicorp.com/terraform/language/v1.12.x/validate), [Sensitive data](https://developer.hashicorp.com/terraform/language/v1.12.x/manage-sensitive-data)<br />
+**Labs:** [02 Variables/outputs](/labs/02-variables-outputs/), [03 Data sources](/labs/03-data-sources/), [04 count/for_each](/labs/04-count-for-each/), [07 Lifecycle](/labs/07-lifecycle/), [08 Conditions](/labs/08-custom-conditions/), [09 Dynamic blocks](/labs/09-dynamic-blocks/)<br />
+**Questions:** [Domain 4 bank](/archive/practice-exams/domain-4-configuration/)
