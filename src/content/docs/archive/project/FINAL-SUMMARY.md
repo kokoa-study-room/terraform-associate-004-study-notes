@@ -1,6 +1,7 @@
 ---
 title: "Terraform Associate (004) 학습 자료 완성!"
 description: "Legacy study material imported from FINAL-SUMMARY.md"
+pagefind: false
 ---
 
 > **Archived study note / 기존 학습 노트**  

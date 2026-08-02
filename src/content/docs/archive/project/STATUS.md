@@ -1,11 +1,14 @@
 ---
-title: "Terraform Associate (004) 학습 자료 현황"
-description: "Legacy study material imported from STATUS.md"
+title: "Historical Status Snapshot (2026-07-20)"
+description: "Historical 2026-07-20 project snapshot; not the current content status."
+pagefind: false
 ---
 
 > **Archived study note / 기존 학습 노트**  
 > 이 페이지는 기존 자료를 보존해 웹으로 가져온 문서입니다. 시험 기준은 [공식 목표 맵](/reference/exam-objectives/)과 [교정 노트](/reference/corrections/)를 우선하세요.  
 > This page preserves the previous notes. Prefer the [official objective map](/reference/exam-objectives/) and [corrections](/reference/corrections/) when facts differ.
+
+현재 완료 상태는 [현재 자료 상태 / Content Status](/guide/content-status/)를 사용하세요. 아래 `진행 중 / 확장 가능` 목록은 당시 기록이며 현재 backlog가 아닙니다.
 
 생성 일시: 2026년 7월 20일
 

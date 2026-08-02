@@ -1,6 +1,7 @@
 ---
 title: "HashiCorp Terraform Associate (004) 완벽 학습 가이드"
 description: "Legacy study material imported from README.md"
+pagefind: false
 ---
 
 > **Archived study note / 기존 학습 노트**  

@@ -1,6 +1,7 @@
 ---
 title: "Terraform Associate (004) 빠른 시작 가이드"
 description: "Legacy study material imported from QUICKSTART.md"
+pagefind: false
 ---
 
 > **Archived study note / 기존 학습 노트**  
