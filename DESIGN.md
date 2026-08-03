@@ -32,6 +32,8 @@ Accent is interactive or instructional, never decorative. Raw colors belong only
 
 Primary: Avenir Next, Avenir, Noto Sans KR, system UI. Mono: SFMono-Regular, Consolas, Liberation Mono.
 
+Korean prose uses word-level wrapping (`word-break: keep-all`) with `overflow-wrap` as the long-token fallback, preventing particles and connective endings from being orphaned by syllable-level line breaks.
+
 ## 4. Spacing & Layout
 Base unit is 4px. Use Starlight spacing tokens for the shell. Reading width is 52rem, sidebar is 19rem, and bilingual comparison blocks collapse from two columns to one at 768px.
 
@@ -57,6 +59,13 @@ Base unit is 4px. Use Starlight spacing tokens for the shell. Reading width is 5
 - Structure: Starlight header, local Pagefind search, nested sidebar, table of contents, and footer navigation.
 - States: expanded/collapsed groups, mobile drawer, search dialog, focus and active route.
 - Accessibility: framework-native keyboard and landmark behavior is preserved.
+
+### Practice Question
+- Structure: progress dashboard followed by semantic question cards, selectable answer rows, an answer disclosure, and per-question actions.
+- States: unanswered, selected, reviewed, and reset. Single-answer questions behave as radio groups; multiple-answer questions behave as checkbox groups.
+- Accessibility: answer rows expose `radio` or `checkbox` roles, `aria-checked`, keyboard activation, and a visible focus ring. Progress uses the native `<progress>` element and a live text summary.
+- Progressive enhancement: source Markdown and `<details>` remain readable without JavaScript. The client enhancement never contains or infers the correct answer.
+- Motion: selected-state and focus changes use color and transform only; next-question navigation uses native scrolling and respects reduced motion.
 
 ## 6. Motion & Interaction
 Micro interactions use 100-150ms ease-out. Panel transitions use 200-300ms ease-in-out. Only opacity and transform animate. `prefers-reduced-motion` removes nonessential duration.

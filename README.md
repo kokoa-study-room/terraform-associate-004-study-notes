@@ -40,9 +40,12 @@ SITE_URL="https://preview.example.com" bun run build
 
 ```bash
 bun run sources:update
+bun run tutorials:update
 ```
 
-This command resolves curated Terraform 1.12 paths from `hashicorp/web-unified-docs` and writes immutable source metadata to `src/data/official-source-index.json`. Review the upstream BUSL 1.1 license before redistributing original HashiCorp content.
+`sources:update` resolves curated Terraform 1.12 paths from `hashicorp/web-unified-docs` and writes immutable source metadata to `src/data/official-source-index.json`. `tutorials:update` snapshots every item returned by the Terraform-filtered Tutorials Library into `src/data/tutorial-catalog.json`, including product relationship, edition, collection, difficulty, headings, and this site's study-scope classification. Both artifacts are committed so normal builds remain network-independent.
+
+Review the upstream BUSL 1.1 license before redistributing original HashiCorp content. The tutorial catalog stores metadata and links, not tutorial bodies.
 
 ## Editorial policy
 

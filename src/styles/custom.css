@@ -50,9 +50,12 @@ body {
   filter: drop-shadow(0 1px 1px rgb(97 104 117 / 5%));
 }
 
-.sl-markdown-content h2 {
+.sl-markdown-content .sl-heading-wrapper.level-h2 {
   border-block-start: 1px solid var(--sl-color-gray-5);
   padding-block-start: 2rem;
+}
+
+.sl-markdown-content h2 {
   letter-spacing: -0.02em;
 }
 
@@ -69,6 +72,11 @@ body {
 
 .sl-markdown-content code:not(:where(.not-content *)) {
   border-radius: 0.25rem;
+}
+
+.sl-markdown-content :where(p, li, td, th) {
+  word-break: keep-all;
+  overflow-wrap: break-word;
 }
 
 .card {

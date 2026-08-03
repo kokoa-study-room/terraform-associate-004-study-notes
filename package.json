@@ -9,6 +9,7 @@
   },
   "scripts": {
     "sources:update": "bun scripts/sync-official-sources.mjs",
+    "tutorials:update": "bun scripts/sync-tutorial-catalog.mjs",
     "content:check": "bun scripts/check-question-bank.mjs",
     "dev": "astro dev",
     "build": "astro check && bun run content:check && astro build",

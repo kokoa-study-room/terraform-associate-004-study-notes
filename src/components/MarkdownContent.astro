@@ -1,0 +1,19 @@
+---
+import '@astrojs/starlight/style/markdown.css';
+
+const isPracticePage =
+  Astro.url.pathname.startsWith('/practice/') || Astro.url.pathname.startsWith('/archive/practice-exams/');
+---
+
+<div class="sl-markdown-content"><slot /></div>
+
+{
+  isPracticePage && (
+    <script>
+      import { initializePractice } from '../scripts/practice';
+
+      initializePractice();
+      document.addEventListener('astro:page-load', initializePractice);
+    </script>
+  )
+}

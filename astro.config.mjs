@@ -24,8 +24,9 @@ export default defineConfig({
         },
       ],
       lastUpdated: true,
-      customCss: ['./src/styles/custom.css'],
+      customCss: ['./src/styles/custom.css', './src/styles/practice.css'],
       components: {
+        MarkdownContent: './src/components/MarkdownContent.astro',
         MobileMenuToggle: './src/components/MobileMenuToggle.astro',
       },
       sidebar: [
@@ -80,6 +81,8 @@ export default defineConfig({
           items: [
             { slug: 'review/exam-readiness' },
             { slug: 'reference/exam-objectives' },
+            { slug: 'reference/objective-lab-map' },
+            { slug: 'reference/tutorial-library-map' },
             { slug: 'reference/terraform-1-12-deep-dive' },
             { slug: 'reference/command-behavior-matrix' },
             { slug: 'reference/hcp-boundaries' },
@@ -102,6 +105,7 @@ export default defineConfig({
           collapsed: true,
           items: [
             { slug: 'reference/official-sources' },
+            { slug: 'reference/tutorial-library-map' },
             { slug: 'guide/labs-and-practice' },
             { slug: 'practice/research-notes' },
             { slug: 'reference/authoring-workflow' },

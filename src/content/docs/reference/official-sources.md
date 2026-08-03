@@ -21,6 +21,7 @@ For exam questions, prefer versioned 1.12 documentation when current behavior di
 |---|---|---|
 | Learning path | [Associate study 004](https://developer.hashicorp.com/terraform/tutorials/certification-004/associate-study-004) | Tutorial content is served separately from the versioned core docs |
 | Objectives | [Associate review 004](https://developer.hashicorp.com/terraform/tutorials/certification-004/associate-review-004) | Use the published objective page as primary source |
+| Tutorial catalog | [Terraform-filtered Tutorials Library](https://developer.hashicorp.com/tutorials/library?product=terraform) | Metadata snapshot: `src/data/tutorial-catalog.json` |
 | Terraform intro | [What is Terraform?](https://developer.hashicorp.com/terraform/intro/v1.12.x) | [`docs/intro/index.mdx`](https://github.com/hashicorp/web-unified-docs/blob/main/content/terraform/v1.12.x/docs/intro/index.mdx) |
 | Core workflow | [Core workflow](https://developer.hashicorp.com/terraform/intro/v1.12.x/core-workflow) | [`docs/intro/core-workflow.mdx`](https://github.com/hashicorp/web-unified-docs/blob/main/content/terraform/v1.12.x/docs/intro/core-workflow.mdx) |
 | CLI | [Terraform CLI](https://developer.hashicorp.com/terraform/cli/v1.12.x) | [`docs/cli`](https://github.com/hashicorp/web-unified-docs/tree/main/content/terraform/v1.12.x/docs/cli) |
@@ -34,4 +35,13 @@ For exam questions, prefer versioned 1.12 documentation when current behavior di
 
 The repository uses Business Source License 1.1 with an Additional Use Grant. This project keeps summaries, citations, links, and an index rather than republishing the complete official corpus. Review the current repository license before copying or hosting original content.
 
-Run `bun run sources:update` to refresh `src/data/official-source-index.json` against the current repository head without making the site build depend on network access.
+## 두 개의 source artifact / Two source artifacts
+
+| Artifact | Refresh command | Authority |
+|---|---|---|
+| `src/data/official-source-index.json` | `bun run sources:update` | Immutable commit-pinned Terraform `v1.12.x` documentation paths |
+| `src/data/tutorial-catalog.json` | `bun run tutorials:update` | Current Tutorials Library discovery metadata and local study-scope classification |
+
+The first artifact answers “what did Terraform 1.12 document?” The second answers “what tutorials are currently discoverable under the Terraform product filter?” A current tutorial never overrides versioned 1.12 behavior for an exam claim.
+
+The tutorial snapshot contains metadata and links rather than tutorial bodies. See the [Tutorial Library map](/reference/tutorial-library-map/) for the 257-item taxonomy and the [Objective-Lab-Tutorial map](/reference/objective-lab-map/) for direct exam coverage.
