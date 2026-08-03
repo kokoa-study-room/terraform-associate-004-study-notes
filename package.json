@@ -11,8 +11,9 @@
     "sources:update": "bun scripts/sync-official-sources.mjs",
     "tutorials:update": "bun scripts/sync-tutorial-catalog.mjs",
     "content:check": "bun scripts/check-question-bank.mjs",
+    "security:check": "bun test scripts/security-headers.test.mjs",
     "dev": "astro dev",
-    "build": "astro check && bun run content:check && astro build",
+    "build": "astro check && bun run content:check && bun run security:check && astro build",
     "preview": "astro preview",
     "deploy": "wrangler deploy"
   },

@@ -15,6 +15,7 @@ The build must report:
 
 - zero Astro diagnostics
 - exactly 200 canonical practice questions
+- passing CSP regression checks for Pagefind WASM, its worker, and Cloudflare Web Analytics
 - a Pagefind search index
 - `dist/404.html` and `dist/sitemap-index.xml`
 - `dist/_headers` and `dist/robots.txt`
@@ -86,4 +87,5 @@ Expected results:
 - Security headers from `public/_headers` are present.
 - Fingerprinted `/_astro/` assets have an immutable cache policy.
 - Search returns results for `use_lockfile`, `ephemeral`, and `workspace`.
+- Browser console has no Pagefind WASM or Cloudflare Insights CSP errors.
 - Mobile navigation updates `aria-expanded`, and practice answer disclosures open.
