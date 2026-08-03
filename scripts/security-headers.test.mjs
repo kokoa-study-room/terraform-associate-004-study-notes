@@ -50,4 +50,17 @@ describe('Content Security Policy', () => {
     // Then
     expect(workerPolicy).toEqual(new Set(["'self'", 'blob:']));
   });
+
+  test('does not attach a separate stale CSP to fixed-name Pagefind assets', () => {
+    // Given
+    const pagefindRule = headers.match(/^\/pagefind\/\*\n((?:\s+.+\n?)*)/m)?.[1] ?? '';
+
+    // When
+    const detachesDocumentPolicy = /^\s*! Content-Security-Policy\s*$/m.test(pagefindRule);
+    const revalidatesFixedAssets = /^\s*Cache-Control:\s*public, max-age=0, must-revalidate\s*$/m.test(pagefindRule);
+
+    // Then
+    expect(detachesDocumentPolicy).toBe(true);
+    expect(revalidatesFixedAssets).toBe(true);
+  });
 });

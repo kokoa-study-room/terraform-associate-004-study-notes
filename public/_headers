@@ -10,7 +10,8 @@
   Cache-Control: public, max-age=31556952, immutable
 
 /pagefind/*
-  Cache-Control: public, max-age=3600, must-revalidate
+  ! Content-Security-Policy
+  Cache-Control: public, max-age=0, must-revalidate
 
 /sitemap*.xml
   Cache-Control: public, max-age=3600, must-revalidate

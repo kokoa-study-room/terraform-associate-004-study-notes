@@ -22,6 +22,8 @@ The build must report:
 
 Use `bun run preview` for a local production preview.
 
+`public/_headers` applies the document CSP globally, then detaches it from `/pagefind/*`. The Pagefind worker otherwise receives its own response CSP, and stale edge metadata on its fixed URL can override the corrected document policy and block WASM. Pagefind assets therefore use `max-age=0, must-revalidate`; the document CSP still controls worker creation with `worker-src 'self' blob:`.
+
 ## Wrangler configuration
 
 `wrangler.json` configures a static generated site:
